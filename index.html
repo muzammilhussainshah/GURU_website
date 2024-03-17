@@ -40,7 +40,7 @@
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
+               <!-- <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
                      <a class="nav-link" href="index.html">Home</a>
                   </li>
@@ -55,6 +55,23 @@
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+               </ul> -->
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" onclick="scrollToSection('home')">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" onclick="scrollToSection('about-us')">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" onclick="scrollToSection('tech')">Tech</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" onclick="scrollToSection('news')">News</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" onclick="scrollToSection('contact-us')">Contact Us</a>
                   </li>
                </ul>
                <form class="form-inline my-2 my-lg-0" style=" justify-content: center;">
@@ -71,7 +88,7 @@
       </div>
       <!-- header section end -->
 
-      <header>
+      <header id="home">
          <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
          <div class="overlay"></div>
          <!-- The HTML5 video element that will create the background video on the header -->
@@ -212,7 +229,7 @@
 
 
    <!-- services section start -->
-   <div class="services_section">
+   <div class="services_section" id="tech">
       <div class="" style="padding-top: 5%;">
          <div id="main_slider" class="carousel slide" data-ride="carousel">
             <div class="banner_taital_main titalHeading">
@@ -551,7 +568,7 @@
    <!-- credibility section end -->
 
    <!-- about section start -->
-   <div class="about_section ">
+   <div class="about_section " id="about-us">
       <div class="container">
          <div class="row">
             <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -634,7 +651,7 @@
    <!-- about section end -->
 
    <!-- news section start -->
-   <div class="news_section layout_padding">
+   <div class="news_section layout_padding" id="news">
       <div class="container">
          <h1 class="news_taital">Recent News</h1>
          <div class="news_section_2">
@@ -684,7 +701,7 @@
    </div>
    <!-- news section end -->
    <!-- contact section start -->
-   <div class="contact_section layout_padding">
+   <div class="contact_section layout_padding" id="contact-us">
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
