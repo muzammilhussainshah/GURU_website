@@ -267,7 +267,7 @@ button {
 }
 
 a.navbar-brand {
-    width: 24%;
+    /* width: 24%; */
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -297,7 +297,9 @@ a.navbar-brand {
 .navbar-brand {
     margin: 0px;
     float: right;
-    width: 14%;
+    /* width: 14%; */
+    padding-right: 15px;
+
 }
 
 .navbar {
@@ -1427,6 +1429,6 @@ header .overlay {
     }
 
     header video {
-        display: none;
+        /* display: none; */
     }
 }
