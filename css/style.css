@@ -363,10 +363,9 @@ a.navbar-brand {
     text-transform: uppercase;
     font-weight: bold;
     /* justify-content: center; */
-    align-items: center;
-    display: flex;
+    /* align-items: center; */
+    /* display: flex; */
 }
-
 .banner_text {
     width: 100%;
     font-size: 16px;
