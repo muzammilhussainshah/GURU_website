@@ -366,6 +366,7 @@ a.navbar-brand {
     /* align-items: center; */
     /* display: flex; */
 }
+
 .banner_text {
     width: 100%;
     font-size: 16px;
@@ -1434,4 +1435,8 @@ header .overlay {
 
 .videoContainer {
     height: 92vh !important;
+}
+
+.robotoFont {
+    font-family: 'Roboto' !important;
 }
