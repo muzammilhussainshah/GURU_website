@@ -1432,3 +1432,7 @@ header .overlay {
         /* display: none; */
     }
 }
+
+.videoContainer {
+    height: 92vh !important;
+}
