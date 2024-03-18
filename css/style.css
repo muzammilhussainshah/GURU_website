@@ -506,6 +506,7 @@ a.navbar-brand {
 
 .box_right {
     width: 70%;
+    margin: 10px 0px;
     padding-left: 20px;
 }
 
@@ -1417,6 +1418,9 @@ header .overlay {
     background-color: black;
     opacity: 0.5;
     z-index: 1;
+}
+.responsive_margin{
+    margin-left: 6%;
 }
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
