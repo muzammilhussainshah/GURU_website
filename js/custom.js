@@ -325,7 +325,7 @@ function scrollToSection(sectionId) {
 	section.scrollIntoView({ behavior: 'smooth' });
 } 
 // 3d card effect
-const $card = document.querySelector('.card');
+const $card = document.querySelector('.animatedcard');
 let bounds;
 
 function rotateToMouse(e) {

@@ -1430,7 +1430,7 @@ header .overlay {
 
 /* 3d CARD */
 
-.card {
+.animatedcard {
     font-weight: bold;
     /* padding: 1em; */
     text-align: right;
@@ -1452,12 +1452,12 @@ header .overlay {
     transform: rotate3d(0);
 }
 
-.card:hover {
+.animatedcard:hover {
     transition-duration: 150ms;
     box-shadow: 0 5px 20px 5px #00000044;
 }
 
-.card .glow {
+.animatedcard .glow {
     position: absolute;
     width: 100%;
     height: 100%;
