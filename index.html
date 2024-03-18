@@ -18,6 +18,8 @@
    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
    <!-- style css -->
    <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- AOS css -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    <!-- Responsive-->
    <link rel="stylesheet" href="css/responsive.css">
    <!-- fevicon -->
@@ -35,32 +37,40 @@
 
 <body>
    <div class="header_section1 robotoFont">
+      <!-- data-aos-offset="200" -->
+      <!-- data-aos-delay="50" -->
+      <!-- data-aos-easing="ease-in-out" -->
+      <!-- data-aos-mirror="true" -->
+      <!-- data-aos-once="false" -->
+      <!-- data-aos-anchor-placement="top-center" -->
       <div class="container-fluid">
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="navbar-brand" href="#"><img src="images/logo.png"></div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-brand" href="#" data-aos="fade-right"><img src="images/logo.png"></div>
+            <button class="navbar-toggler" data-aos="fade-left" type="button" data-toggle="collapse"
+               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
+               <ul class="navbar-nav mr-auto" data-aos="fade-right">
                   <li class="nav-item active">
-                     <a class="nav-link" onclick="scrollToSection('home')">Home</a>
+                     <a href="#" class="nav-link" onclick="scrollToSection('home')">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" onclick="scrollToSection('about-us')">About Us</a>
+                     <a href="#" class="nav-link" onclick="scrollToSection('about-us')">About Us</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" onclick="scrollToSection('tech')">Tech</a>
+                     <a href="#" class="nav-link" onclick="scrollToSection('tech')">Tech</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" onclick="scrollToSection('news')">News</a>
+                     <a href="#" class="nav-link" onclick="scrollToSection('news')">News</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" onclick="scrollToSection('contact-us')">Contact Us</a>
+                     <a href="#" class="nav-link" onclick="scrollToSection('contact-us')">Contact Us</a>
                   </li>
                </ul>
-               <form class="form-inline my-2 my-lg-0" style=" justify-content: center;">
+               <form class="form-inline my-2 my-lg-0" data-aos="fade-left" data-aos-duration="1000"
+                  style=" justify-content: center;">
                   <div class="login_bt" style="margin-right: 5%;">
                      <ul>
                         <li>
@@ -86,7 +96,7 @@
             <div class="d-flex h-100 text-center align-items-center">
                <div class="w-100 text-white">
                   <!-- class="banner_taital -->
-                  <h1 class="banner_taital robotoFont">
+                  <h1 class="banner_taital robotoFont" data-aos="fade-up" data-aos-anchor-placement="top-center">
                      <!-- Unlock the power of AI with our cutting-edge services. -->
                      Unleash the <i>Potential</i> of <i>AI</i> with <i>State-of-the-Art</i> <i>Technology</i>
                   </h1>
@@ -99,36 +109,10 @@
       <div class="banner_section layout_padding header_section robotoFont" style=" height: 800px;">
          <div class="container-fluid">
             <div id="banner_slider" class="carousel slide" data-ride="carousel">
-               <!-- <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="row">
-                        <div class="col-md-6">
-
-                           <div class="banner_taital_main">
-                              <h1 class="banner_taital">
-                                 Welcome to the forefront of artificial intelligence innovation!
-                              </h1>
-                              <p class="banner_text">
-                                 Welcome to the future of AI at GURU. Discover intelligent solutions
-                                 designed to streamline operations, innovate processes, and elevate experiences. Join us
-                                 in shaping tomorrow's world with cutting-edge artificial intelligence technology
-                              </p>
-                              <div class="readmore_btn"><a href="#">Read More</a></div>
-                              <div class="started_bt"><a href="#">Contact Us</a></div>
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="banner_section">
-                              <img src="images/robot_PNG38.png" style="width: 100%; height: 100%;">
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div> -->
                <div class="carousel-inner">
                   <div class="carousel-item active">
                      <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6" data-aos="fade-right">
                            <div class="banner_taital_main">
                               <h1 class="banner_taital">
                                  Welcome to the forefront of <i>artificial intelligence</i> innovation!
@@ -143,7 +127,7 @@
                            </div>
                         </div>
                         <div class="col-md-6">
-                           <div class="banner_section">
+                           <div class="banner_section" data-aos="fade-left">
                               <img src="images/robot_PNG38.png" style="width: 100%; height: 100%;">
                            </div>
                         </div>
@@ -214,7 +198,7 @@
             <div class="carousel-inner">
                <div class="carousel-item active">
                   <div class="row">
-                     <div class="col-md-7">
+                     <div class="col-md-7" data-aos="fade-right">
                         <div class="banner_taital_main">
                            <p class="banner_text" style="color: #07235c; ;">
                               <i>ELEVATOR PITCH</i>
@@ -228,9 +212,9 @@
                               in shaping tomorrow's world with cutting-edge artificial intelligence technology
                            </p>
                         </div>
-
                      </div>
-                     <div class="col-md-4 image-margin-small" style="margin-left: 6%;">
+                     <div class="col-md-4 image-margin-small" style="margin-left: 6%;" data-aos-duration="1100"
+                        data-aos="flip-right">
                         <img src="images/pitch.jpg" style="width: 100%; height: 100%;">
                      </div>
                   </div>
@@ -247,7 +231,7 @@
       <div class="" style="padding-top: 5%;">
          <div id="main_slider" class="carousel slide" data-ride="carousel">
             <div class="banner_taital_main titalHeading">
-               <p class="banner_text " style="color: #07235c; ">
+               <p class="banner_text " style="color: #07235c; " data-aos="fade-right">
                   <!-- REASONS TO BELIEVE -->
                   <i>REASONS TO BELIEVE</i>
 
@@ -258,7 +242,8 @@
                   <div class="container" style="margin-top: 7%;">
                      <div class="row">
                         <div class="col-md-4">
-                           <div class="service_box">
+                           <div class="service_box" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                              data-aos-delay="0">
                               <div class="house_icon">
                                  <img src="images/icon-1.png" class="image_1" style="width: 35%;">
                                  <img src="images/icon-4.png" class="image_2" style="width: 35%;">
@@ -272,7 +257,8 @@
                            </div>
                         </div>
                         <div class="col-md-4">
-                           <div class="service_box ">
+                           <div class="service_box" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                              data-aos-delay="150">
                               <div class="house_icon">
                                  <img src="images/icon-2.png" class="image_1" style="width: 35%;">
                                  <img src="images/icon-5.png" class="image_2" style="width: 35%;">
@@ -286,7 +272,8 @@
                            </div>
                         </div>
                         <div class="col-md-4">
-                           <div class="service_box">
+                           <div class="service_box" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                              data-aos-delay="300">
                               <div class="house_icon">
                                  <img src="images/icon-3.png" class="image_1" style="width: 35%;">
                                  <img src="images/icon-6.png" class="image_2" style="width: 35%;">
@@ -334,16 +321,19 @@
             </div> -->
             <div
                style="height: 800px; flex-direction: column; display: flex; flex: 1; justify-content: center; align-items: center;">
-               <h1 class="h2">USE CASES / INDUSTRIES</h1>
+               <h1 class="h2" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="150">USE CASES /
+                  INDUSTRIES</h1>
                <div class="container" style="margin-top: 2%;">
                   <div class="row">
-                     <div class="col-md-4">
+                     <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="0">
                         <h2 class="text-white"><strong> Aerospace &amp; Automotive</strong></h2>
                      </div>
-                     <div class="col-md-4">
+                     <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-delay="150">
                         <h2 class="text-white"><strong> Manufacturing</strong></h2>
                      </div>
-                     <div class="col-md-4">
+                     <div class="col-md-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-delay="300">
                         <h2 class="text-white"><strong> Training</strong></h2>
                      </div>
                   </div>
@@ -360,7 +350,7 @@
       <div class="" style="padding-top: 5%;">
          <div id="main_slider" class="carousel slide" data-ride="carousel">
             <div class="banner_taital_main titalHeading">
-               <p class="banner_text " style="color: #07235c; ">
+               <p class="banner_text " style="color: #07235c;" data-aos="fade-right">
                   STAT
                </p>
             </div>
@@ -371,7 +361,8 @@
                         <div class="col-md-12" style=" margin-top: 8%;">
                            <div class="service_box">
                               <div class="col d-flex justify-content-center align-items-center stat  "
-                                 style="background-color: #07235c; min-height: 200px; border-radius: 25px; ">
+                                 style="background-color: #07235c; min-height: 200px; border-radius: 25px; "
+                                 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="150">
                                  <h1 class="banner_taital justify-content-center" style=" width: 20%;">
                                     100X
                                  </h1>
@@ -411,11 +402,13 @@
             </div> -->
             <div
                style="height: 800px; flex-direction: column; display: flex; flex: 1; justify-content: center; align-items: center;">
-               <h1 class="h1">WHAT IF?</h1>
+               <h1 class="h1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="150">WHAT IF?
+               </h1>
                <div class="container" style="margin-top: 2%;">
                   <div class="row">
                      <div class="col-md-12">
-                        <h1 class="h1">What if we could <i>capture the most specialized skills</i> in a system to
+                        <h1 class="h1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="150">
+                           What if we could <i>capture the most specialized skills</i> in a system to
                            hyper-enable anyone in the world?</h1>
                      </div>
                   </div>
@@ -432,13 +425,15 @@
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
-               <h1 class="studies_taital">APPLICATIONS / SKILLS</h1>
+               <h1 class="studies_taital" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                  data-aos-delay="150">APPLICATIONS / SKILLS</h1>
             </div>
          </div>
          <div class="studies_section_2">
             <div class="row " style="">
                <div class="col-md-4 application">
-                  <div class="card rounded" style="width: 18rem; min-height: 230px;  margin-top: 20px;">
+                  <div class="card rounded" style="width: 18rem; min-height: 230px;  margin-top: 20px;"
+                     data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="0">
                      <div class="card-body">
                         <h5 class="card-title"><strong><i>Geometry Search & Synthesis</i></strong></h5>
                         <p class="card-text">Create or modify complex geometries by simply describing or sketching them.
@@ -447,7 +442,8 @@
                   </div>
                </div>
                <div class="col-md-4 application">
-                  <div class="card rounded" style="width: 18rem; min-height: 230px; margin-top: 20px;">
+                  <div class="card rounded" style="width: 18rem; min-height: 230px; margin-top: 20px;"
+                     data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="150">
                      <div class="card-body">
                         <h5 class="card-title"><strong><i>Simulation & Analysis</i></strong></h5>
                         <p class="card-text">Intuitively define accurate parameters, boundary conditions and material
@@ -456,7 +452,8 @@
                   </div>
                </div>
                <div class="col-md-4 application">
-                  <div class="card rounded" style="width: 18rem; min-height: 230px; margin-top: 20px;">
+                  <div class="card rounded" style="width: 18rem; min-height: 230px; margin-top: 20px;"
+                     data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
                      <div class="card-body">
                         <h5 class="card-title"><strong><i>Virtual World Building</i></strong></h5>
                         <p class="card-text">Bring high-fidelity virtual environments to life in no time. Build a
@@ -471,7 +468,7 @@
    <!-- application section end -->
 
    <!-- credibility section start -->
-   <div class="customer_section layout_padding robotoFont">
+   <div class="customer_section layout_padding robotoFont" style="overflow: hidden;">
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
@@ -561,7 +558,7 @@
             </div>
 
          </div>
-         <div class="container" style=" margin-top: 3%;">
+         <div class="container" style=" margin-top: 3%; ">
             <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
                <div class="col">
                   <div class="p-2 border bg-light d-flex justify-content-center"
@@ -590,7 +587,7 @@
             </div>
          </div>
 
-         <div class="container" style="margin-top: 1.5%; margin-bottom: 3%; ">
+         <div class="container" style="margin-top: 1.5%; margin-bottom: 3%;">
             <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
                <div class="col">
                   <div class="p-2 border bg-light d-flex justify-content-center"
@@ -637,9 +634,10 @@
       <div class="container">
          <div class="row">
             <div class="col-md-6 d-flex justify-content-center align-items-center">
-               <div class="about_img "><img src="images/logoResize.png" height="100%" width="100%"></div>
+               <div class="about_img " data-aos="fade-right"><img src="images/logoResize.png" height="100%"
+                     width="100%"></div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-left">
                <div class="about_text_main">
                   <h1 class="about_taital">About Us</h1>
                   <p class="about_text">GURU is a universal interface for simulation
@@ -652,16 +650,17 @@
       </div>
    </div>
 
-   <div class="container robotoFont">
+   <div class="container robotoFont ">
       <div class="">
          <div class="">
-            <div class="online_box_left border mt-5">
+            <div class="online_box_left border mt-5" style="overflow: hidden;">
                <div class="row no-gutters">
                   <div class="col-md-4">
-                     <img src="images/teamGuru.jpg" class="" alt="team GURU" height="100%" width="100%">
+                     <img data-aos-duration="1100" data-aos="flip-right" src="images/teamGuru.jpg" class=""
+                        alt="team GURU" height="100%" width="100%">
                   </div>
                   <div class="col-md-8">
-                     <div class="card-body">
+                     <div class="card-body" data-aos="fade-left">
                         <p class="book_text">MSBAI TEAM</p>
                         <p class="appoinment_text">We are a growing team combining domain expertise with
                            <i>state-of-the-art AI</i>. We are passionate about <i>hyper-enabling</i> people to do
@@ -671,23 +670,24 @@
                   </div>
                </div>
             </div>
-            <div class="online_box_left border">
+            <div class="online_box_left border" style="overflow: hidden;">
                <div class="online_box_main">
-                  <div class="box_right">
-                     <p class="book_text ">OUR MISSION</p>
+                  <div class="box_right" data-aos="fade-right">
+                     <p class="book_text">OUR MISSION</p>
                      <h4 class="appoinment_text "> Our mission is to enable a true<i> renaissance </i>in
                         engineering and creative design.
                      </h4>
                   </div>
                </div>
             </div>
-            <div class="online_box_left border">
+            <div class="online_box_left border" style="overflow: hidden;">
                <div class="online_box_main">
                   <div class="box_left">
                      <!-- <img src="images/allan.png"> -->
-                     <img src="images/allan.jpg" style="height: 77px ; width: 77px;">
+                     <!-- style="height: 77px ; width: 77px;" -->
+                     <img data-aos-duration="1100" data-aos="flip-left" src="images/allan.jpg">
                   </div>
-                  <div class="box_right">
+                  <div class="box_right" data-aos="fade-left">
                      <p class="book_text">FOUNDER</p>
                      <h4 class="appoinment_text"><i>Allan Grosvenor</i> is the Founder and CEO at MSBAI. He brings 25
                         years of
@@ -699,10 +699,10 @@
                   </div>
                </div>
             </div>
-            <div class="online_box_left border">
+            <div class="online_box_left border" style="overflow: hidden;">
                <div class="online_box_main">
-                  <div class="box_right">
-                     <p class="book_text ">HISTORY</p>
+                  <div class="box_right" data-aos="fade-right">
+                     <p class="book_text">HISTORY</p>
                      <h4 class="appoinment_text "> MSBAI started in 2017 with a vision to <i>bring the power of AI
                            to
                            simulations.</i> In 2020, MSBAI was selected to join the<i>Techstars Air Force
@@ -721,49 +721,47 @@
    <!-- news section start -->
    <div class="news_section layout_padding robotoFont" id="news">
       <div class="container">
-         <h1 class="news_taital">Recent News</h1>
+         <h1 class="news_taital" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="0">Recent
+            News</h1>
          <div class="news_section_2">
             <div class="news_box">
                <div id="custom_slider" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner " style="position: relative;">
-                     <div style="display:flex ;flex :1; background-color: red; position: relative;">
-                        <div class="carousel-item active">
-                           <div class="news_img"><img src="images/n1.png"></div>
-                           <h2 class="does_taital"><i>MSBAI</i> joins GameDay Universe at NFL Alumni Event</h2>
-                           <p class="dummy_text">
-                              <i>February 5, 2024</i>
-                           </p>
-                           <p class="dummy_text"><i>MSBAI</i> creates an immersive and exciting experience for gamers
-                              and
-                              esports enthusiasts using Unreal Engine, Simulation, and AI.
-                           </p>
-                        </div>
+                     <div class="carousel-item active">
+                        <div class="news_img"><img src="images/n1.png"></div>
+                        <h2 class="does_taital"><i>MSBAI</i> joins GameDay Universe at NFL Alumni Event</h2>
+                        <p class="dummy_text">
+                           <i>February 5, 2024</i>
+                        </p>
+                        <p class="dummy_text"><i>MSBAI</i> creates an immersive and exciting experience for gamers
+                           and
+                           esports enthusiasts using Unreal Engine, Simulation, and AI.
+                        </p>
                      </div>
-                     <div style="display:flex ;flex :1; background-color: red; ">
-                        <div class="carousel-item">
-                           <div class="news_img"><img src="images/n2.png"></div>
-                           <h2 class="does_taital"><i>MSBAI</i> presents GURU at CES 2024</h2>
-                           <p class="dummy_text">
-                              <i>January 9, 2024</i>
-                           </p>
-                           <p class="dummy_text">Live demonstrations of <i>GURU</i> at the Consumer Electronics Show in
-                              Las
-                              Vegas.
-                           </p>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="news_img"><img src="images/n3.png"></div>
-                           <h2 class="does_taital"><i>MSBAI</i> research featured at 22nd Smoky Mountains Computational
-                              Sciences and Engineering Conference</h2>
-                           <p class="dummy_text">
-                              <i>August 23, 2022</i>
-                           </p>
-                           <p class="dummy_text">Simulation Workflows in Minutes, at Scale for Next Generation HPC
-                           </p>
-                        </div>
+                     <div class="carousel-item">
+                        <div class="news_img"><img src="images/n2.png"></div>
+                        <h2 class="does_taital"><i>MSBAI</i> presents GURU at CES 2024</h2>
+                        <p class="dummy_text">
+                           <i>January 9, 2024</i>
+                        </p>
+                        <p class="dummy_text">Live demonstrations of <i>GURU</i> at the Consumer Electronics Show in
+                           Las
+                           Vegas.
+                        </p>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="news_img"><img src="images/n3.png"></div>
+                        <h2 class="does_taital"><i>MSBAI</i> research featured at 22nd Smoky Mountains Computational
+                           Sciences and Engineering Conference</h2>
+                        <p class="dummy_text">
+                           <i>August 23, 2022</i>
+                        </p>
+                        <p class="dummy_text">Simulation Workflows in Minutes, at Scale for Next Generation HPC
+                        </p>
+                     </div>
 
-                     </div>
                   </div>
+
                   <a class="carousel-control-next" href="#custom_slider" role="button" data-slide="next">
                      <i class="fa fa-arrow-right"></i>
                   </a>
@@ -780,7 +778,8 @@
    </div>
    <!-- news section end -->
    <!-- contact section start -->
-   <div class="contact_section layout_padding robotoFont" id="contact-us">
+   <div class="contact_section layout_padding robotoFont" id="contact-us" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-delay="300">
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
@@ -813,32 +812,36 @@
             <div class="col-md-12">
                <div class="location_text">
                   <ul>
-                     <li>
+                     <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="0">
                         <a href="mailto:info@msb.ai"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                      </li>
-                     <li>
+                     <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="150">
                         <a href="https://maps.app.goo.gl/UVkyLR5jfM8wnMDv7" target="_blank"><i class="fa fa-map-marker"
                               aria-hidden="true"></i></a>
                      </li>
-                     <li>
+                     <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
                         <a href="tel:+13109542049"><i class="fa fa-phone" aria-hidden="true"></i></a>
                      </li>
                   </ul>
                </div>
             </div>
-            <div class="footer_logo">
+            <div class="footer_logo" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="150">
                <a href="#" onclick="scrollToSection('home')">
                   <img src="images/logo.png">
             </div>
             <div class="social_icon">
                <ul>
-                  <li><a href="https://www.facebook.com/msb.aiGURU/" target="_blank"><i class="fa fa-facebook"
+                  <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="0"><a
+                        href="https://www.facebook.com/msb.aiGURU/" target="_blank"><i class="fa fa-facebook"
                            aria-hidden="true"></i></a></li>
-                  <li><a href="https://twitter.com/microsurgeonbot" target="_blank"><i class="fa fa-twitter"
+                  <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="150"><a
+                        href="https://twitter.com/microsurgeonbot" target="_blank"><i class="fa fa-twitter"
                            aria-hidden="true"></i></a></li>
-                  <li><a href="https://www.instagram.com/msb.ai" target="_blank"><i class="fa fa-instagram"
+                  <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300"><a
+                        href="https://www.instagram.com/msb.ai" target="_blank"><i class="fa fa-instagram"
                            aria-hidden="true"></i></a></li>
-                  <li><a href="https://www.youtube.com/msbai" target="_blank"><i class="fa fa-youtube-play"
+                  <li data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="450"><a
+                        href="https://www.youtube.com/msbai" target="_blank"><i class="fa fa-youtube-play"
                            aria-hidden="true"></i></a></li>
                </ul>
             </div>
@@ -855,6 +858,12 @@
    <!-- sidebar -->
    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
    <script src="js/custom.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+      AOS.init({
+         duration: 700,
+      });
+   </script>
    <!-- javascript -->
 </body>
 
