@@ -1499,3 +1499,7 @@ header .overlay {
     height: 700px;
 
 }
+
+.navBarButtons:hover {
+    cursor: pointer;
+}
