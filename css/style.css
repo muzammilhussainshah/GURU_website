@@ -1469,6 +1469,12 @@ header .overlay {
 
 /* 3d CARD */
 
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Ensure it stays above other content */
+}
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
 
@@ -1485,7 +1491,7 @@ header .overlay {
 }
 
 .videoContainer {
-    height: 92vh !important;
+    height: 100vh !important;
 }
 
 .robotoFont {

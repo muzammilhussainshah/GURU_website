@@ -481,7 +481,7 @@
     .stateSectionHeight {
         height: 500px;
     }
-    
+
     .responsive_margin {
         margin-left: 0%
     }
@@ -492,6 +492,7 @@
     #banner_slider a.carousel-control-prev {
         display: none;
     }
+ 
 
     .responsive_margin {
         margin-left: 0%

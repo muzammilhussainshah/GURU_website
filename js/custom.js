@@ -370,15 +370,15 @@ $card.addEventListener('mouseleave', () => {
   $card.style.transform = '';
   $card.style.background = '';
 });
-// Typing effect
-var i = 0;
-var txt = 'Lorem ipsum typing effect!'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+window.onscroll = function() {stickyNavbar()};
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+  if (window.pageYOffset >= sticky) {
+	navbar.classList.add("sticky")
+  } else {
+	navbar.classList.remove("sticky");
   }
 }
