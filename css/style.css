@@ -1440,3 +1440,8 @@ header .overlay {
 .robotoFont {
     font-family: 'Roboto' !important;
 }
+
+.stateSectionHeight{
+    height: 700px;
+
+}
